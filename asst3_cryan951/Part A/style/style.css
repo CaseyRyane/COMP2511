@@ -1,0 +1,495 @@
+/*Sets background color to an off white color for the majority of the containers */
+#main-menu,#left-side,#content,#quick-contacts,#social,#bottom-menu{
+    background-color: whitesmoke;
+}
+/*sets the background for the footer to transparent */
+#footer{
+    background-color: whitesmoke|transparent;
+}
+/*sets the company header to a pure white */
+#company-header{
+    background-color: white;
+}
+
+/*CSS for all sizes */
+/*sets the background color and font size/family for all pages and all sizes */
+body{
+    background-image: url(../img/background.png);
+    background-repeat: repeat;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+/*sets the font family for all heading elements */
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oswald', sans-serif;
+}
+
+/*sets the container for all pages */
+.container{
+    margin:auto;  
+    padding:0;
+
+}
+
+/*CSS for all large screen sizes */
+@media (min-width:1100px){
+
+	/*sets a max width for the container */
+    .container{
+        width: 1100px;
+
+    }
+	
+	/*sets width and height for the company header */
+    #company-header{
+        width: 100%;
+        height: 150px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+	
+	/*sets style for boht nav menus */
+    #main-menu, #bottom-menu{
+        float: left;
+        width: 100%;
+        height: 45px;
+        margin-bottom: 15px;
+
+    }
+
+	/*sets style for the elements in each nav menu */
+    #main-menu ul li, #bottom-menu ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0.5em;
+		padding-left: 2em;
+		padding-right 2em;
+    }
+	
+	/*modifies the botto menu to differ from the top menu style */
+	#bottom-menu{
+		width: 55%;
+		margin-left: 23%;
+	}
+
+	/*centers the buttons at the top of the page */
+    #buttons{
+        text-align: center;
+        clear: right;
+        margin: 0.5em;
+    }
+
+	/*pushes the sub menu to the left side of the page and sets a borer */
+    #left-side{
+        clear: left;
+        float: left;
+        width: 15%;
+        height: auto; 
+        text-align: left;
+        margin: 15px;
+        padding-top: 10px;
+    }
+
+	/*padds the elements within the side menu */
+    #sub-menu li{
+        display: block;
+        padding: 5px;
+    }
+	
+	/*sets width for general information content */
+    #content{
+        width: 61.75%;
+        float: left;
+        height: auto;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+	/*Pushes contact and social media content to the right side of the page */
+    #right-side{
+        width: 15%;
+        height: 200px;    
+        float: left;  
+        margin: 15px;
+    }
+	
+	/*pads the scoial content form the contacts*/
+    #social{
+        margin-top: 1em;
+        padding: 5px;
+    }
+	
+	/*padds the contact content */
+    #quick-contacts{
+        padding: 5px;
+    }
+	/* sets height width for the footer*/
+    #footer{
+        clear:left;
+
+        width 100%;
+        height 25px;
+        padding: 15px;;
+    }
+
+	/*All heading sizes are set for the large screen size */
+    h1{
+        font-size: 4.53em;
+    }
+    h2{
+        font-size: 3rem;
+    }
+
+    h3{
+        font-size: 3rem;
+    }
+    h4{
+        font-size: 2rem;
+    }
+    h5{
+        font-size: 1.75rem;
+    }
+}
+
+/*CSS for medium screen size*/
+@media (min-width:650px) and (max-width:1099px){
+
+	/*container is set to a mac heigh and width */
+    .container{
+        width: 600px;
+        height: 900px;;
+
+    }
+	
+	/*Company ehader is set to max width and height */
+    #company-header{
+        width: 100%;
+        height: 50px; 
+        margin-bottom: 15px;
+    }
+	
+	/*both menus are stylized and set to the correct height */
+    #main-menu, #bottom-menu{
+        float: left;
+        width: 100%;
+        height: 35px;
+        margin-bottom: 15px; 
+    }
+
+	/*menu items are styled and padded */
+    #main-menu ul li, #bottom-menu ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0.5em;
+    }
+
+	/*buttons are set in the middle of the top of the page */
+    #buttons{
+        text-align: center;
+        clear: right;
+        margin: 0.3em;
+    }
+
+	/*margin added to bottom of the sub menu */
+    #left-side{
+        margin-bottom: 15px;
+    }
+
+	/*sub menu items are styled and padded from each otehr */
+    #sub-menu ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 0.3em;
+    }
+	
+	/*main content is set to a max widht and height  */
+    #content{
+        width: 95%;
+        height: auto;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+	/* social and contact info is stylized for height and width and pushed to bottom of the page*/
+    #right-side{
+        width: 100%;
+        height: 70px;    
+        margin-bottom: 28px;  
+    }
+
+	/* contacts are removed*/
+    #quick-contacts{
+        display: none;
+    }
+
+	/* footer is set to width and heigh and pushed to bottom fo the page*/
+    #footer{
+        clear:left;
+        width 100%;
+        height 25px;
+        padding: 15px;;
+    } 
+
+	/*All heading sizes are set for medium screen size  */
+    h1{
+        font-size: 2.8rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.4rem;
+    }
+    h5{
+        font-size: 1.3rem;
+    }
+    h6{
+        font-size: 1.1rem;
+    }
+}
+
+/*CSS for smale screen size */
+@media (max-width:649px){
+
+	/*max container size is set for content */
+    .container{
+        width: 300px;
+        height: 730px;;
+        
+    }
+
+	/*compnay header size is specifed */
+    #company-header{
+        width: 100%;
+        height: 50px; 
+    }
+	
+	/*menus are set in size and padded */
+    #main-menu, #bottom-menu{
+        width: 100%;
+        height: 35px;
+        padding-bottom: 2em;
+    }
+
+	/* menu items are styled andset in line*/
+    #main-menu ul li, #bottom-menu ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0.5em;
+    }
+
+	/*submenus and social media are removed */
+    #left-side, #sub-menu, #right-side{
+        display: none;
+    }
+
+	/*buttons are set at the top of the page */
+    #buttons{
+        text-align: center;
+        clear: right;
+        margin: 0.2em;
+    }
+
+	/* main content size is specifed */
+    #content{
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+	/* footer is set to the bottom with a max height*/
+    #footer{
+        width 100%;
+        height 25px;
+    } 
+	
+	/*All header sizes are set */
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    h5{
+        font-size: 1.3rem;
+    }
+
+}
+
+/* CSS for all pages*/
+
+/* buttons are style and centeres*/
+.button {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding: 0.2em 0.8em;
+    text-align: center;
+    font-family: inherit;
+}
+
+/*titles are given background color and centred */
+.ptitle{
+    text-align: center;
+    background-color: #427FBD;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/*intro titles are centered */
+#pIntro{
+    text-align: center;
+    padding: 1em;
+}
+
+/*content list is styled on top of each other */
+#cat-list ul li{
+    list-style: none;
+    display: inline-block
+}
+
+/* centered and color added */
+.category{
+    padding: 1em;
+    text-align: center;
+    background-color: #77B3F1;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    width: 
+}
+
+/* img size is set to half container size*/
+.category img {
+    max-height: auto;
+    max-width: 50%;
+    padding: 0.5em;
+}
+
+/*left logo size is set and position on left */
+#left-logo{
+    max-height: 100%;
+    max-width: auto;
+    display: inline-block;
+    float: left;
+}
+
+/* right logo size is set and positioned on the right*/
+#right-logo{
+    max-height: 100%;
+    max-width: auto;
+    display: inline-block;
+    float: right;
+}
+
+/*changes the color of all links that are unvistied*/
+a:link{
+    color: #000080; /*Dark Blue*/
+	text-decoration: none;
+}
+
+/* changes the color of links that have been visited */
+a:visited{
+    color: #800000; /*Maroon*/
+	text-decoration: none;
+}
+
+/*changes the color and underliens links when you hover over them*/
+a:hover{
+    color: #df2d2d; /*dark red*/
+    text-decoration: underline;
+}
+
+/*underlines and increases font of current page in navs */
+.currentPage{
+	color: cadetblue;
+	text-decoration: underline;
+	font-size: 1.2em;
+	}
+
+/* alligns menu items in the center*/
+#main-menu, #bottom-menu{
+    text-align: center;
+}
+
+
+
+/*CSS for Javascript functions */
+
+/*added to img so they disapear */
+.off{
+    display: none;
+}
+
+/* added to button so not displayed*/
+#normal{
+    display: none;
+}
+
+
+/*Shift the background  color for content to grey  */
+.shiftGrey{
+    background-color: grey;
+    
+}
+
+/*changes font family and and aligns left for all paragraphs and addds grey background */
+.shiftP{
+     font-family: "Times New Roman";
+    text-align: left;
+     background-color: grey;
+    padding: 0.5em;
+}
+
+/*Changes the background image for a page */
+.BGChange{
+    background-image: url(../img/bg2.jpg);
+    background-repeat: repeat;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

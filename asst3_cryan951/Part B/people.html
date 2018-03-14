@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Home | LDD</title>
+		<link rel="stylesheet" href="style/reset.css" />
+		<link rel="stylesheet" href="style/style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script src="script/script.js"> </script>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel = "stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+
+
+	</head>
+	<body>
+		<!--navbar that includes company name and logo added to the entire top of the page -->
+		<div class="row">
+			<div class="col-md-12">
+				<nav class = "navbar navbar-expand-sm bg-dark navbar-dark">
+
+					<!--Company header, with logo on left side. logo is linked to easter egg javaScript function -->
+					<img class="navbar-brand" id="left-logo" src="img/logo.jpg" alt="LDD" title="Company Logo" ondblclick="easterEgg();">
+					<h5 class="navbar-brand">Logic Development and Design</h5>
+
+					<!-- Top navigation menu with links ot each page -->
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href ="products.html">Products</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="people.html">People</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>         
+
+		<!--Class container for formating the site with a fixed with for each screen size -->
+		<div class="container">
+
+			<div class="col-s-12 text-center mt-2 mb-2">
+
+				<!-- Buttons that link to javaScript for normal read, easy read and toggle style functions --> 
+				<section>
+					<button class="btn" id="normal" onclick="normalRead()">Normal Read</button>
+					<button class="btn" id="easy" onclick="easyRead()">Easy Read</button>
+					<button class="btn" onclick="styleChange()">Toggle Change</button>
+				</section>
+			</div>
+
+			<div class="row">
+
+				<!-- Columns are set on right side for the sub nav -->
+				<nav class="col-sm-2 bg-light h-50">
+
+					<!-- stacked nav items that link to areas on current page -->
+					<ul class="nav flex-column">
+						<li><h5>Our Team:</h5></li>
+						<li class="nav-item">
+							<a class="nav-link" href="#leader">Leadership Team</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#devteam">Development Team</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#customer">Customer Relations</a>
+						</li>
+					</ul>
+				</nav>
+
+				<!--Main content is centered and takes up the majority fo the page -->
+				<div id="content" class="col-sm-8 ">
+
+					<div>
+						<h1 class="text-center">Our Team </h1>
+					</div>
+
+					<div>
+						<p>Logic Development and Design (LDD) prides itself in employing people that share our passion in delivering the absolute best product to our customers and are able to enjoy their work while doing so.</p>
+					</div>
+
+					<div>
+						<h2 class="text-center">Notable Team Members</h2>
+					</div>
+					<div id="cat-list">
+						<ul>
+
+							<li>
+								<div class="category">
+									<h5 id="leader">Leadership Team</h5>
+									<figure>
+										<img src="img/BCT-%E2%80%93-Nov-3-%E2%80%93-Top-3-Team-Morale-Killers-to-Avoid.jpg" alt="Our Team" title="Team Meeting">
+										<figcaption><p>Our leadership team has been with us since day one and have helped shape the LDD into the company it is today.</p></figcaption>
+									</figure>
+
+									&nbsp;
+									<p>Founder and CEO: Casey Ryane</p>
+									&nbsp;
+									<p>President HR and Management: Yolanda Jameson</p> 
+									&nbsp;
+									<p>Vice President Consulting: Jim Scofield</p>
+									&nbsp;
+									<p>Vice President Consulting: Dusty Joachim</p>
+
+								</div>
+							</li>
+							<li>
+								<div class="category">
+									<h5 id="devteam">Development Team </h5>
+									<figure>
+										<img src="img/team_crop.png" alt="Dev Team Leads" title="Brainstorming Team">
+										<figcaption><p>Our development team leads form the backbone of our ability to ensure products are always delivered to their full extent and in an efficent manner.</p></figcaption>
+									</figure>
+									&nbsp;
+									<p>Mobile Application lead: Rashida Chudary </p>
+									&nbsp;
+									<p>Web Application Lead: Miroslav Amjad </p> 
+									&nbsp;
+									<p>Cloud Solutions Lead: Jamal Habersmith</p>
+									&nbsp;
+									<p>Desktop Application Lead: Xavier Moore</p>
+
+
+								</div>
+							</li>
+							<li>
+								<div class="category">
+									<h5 id="customer">Customer Relations Team</h5>
+									<figure>
+										<img src="img/shake-up-sales-meeting-header.jpg" alt="Customer Team" title="Customer Support and Relations team">
+										<figcaption><p>To ensure that customers are always aware of every detail of their program and are able to shape their final product to fit their vison our team develops close relations with every customer.</p> </figcaption>
+									</figure>
+
+									&nbsp;
+									<p>Customer Relations: Kenny Wong</p>
+									&nbsp;
+									<p>Field Services: Charlie Chang </p> 
+									&nbsp;
+									<p>Sales Lead: Maria Slosberg</p>
+									&nbsp;
+									<p>Sales Lead: Carl Lowbeer</p>
+							</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--Quick contact and social media links are set on the right side  -->
+				<aside class="col-sm-2 h-50 bg-light">
+
+					<aside>
+						<h5>Have a quick question? </h5>
+						<h5>Give us a call! </h5>
+						&nbsp;
+						<h6>+1 403 234 4235</h6>
+						&nbsp;
+					</aside>
+					<aside class="mt-2">
+						<h5>Want to keep up to date?</h5>
+						&nbsp;
+						<ul>
+							<li><a href="#">Instagram</a></li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Twitter</a></li>
+						</ul>
+					</aside>
+				</aside>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12 mt-2">
+					<nav class = "navbar navbar-expand-sm bg-dark navbar-dark">
+
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Contact Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href ="products.html">Products</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="people.html">People</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			
+			<footer>
+				<p> 
+					Website deisigned and implemented by Casey Ryane: 
+					Logic Development and Design &copy; 2018
+					All rights reserved
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
+
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Home | LDD</title>
+		<link rel="stylesheet" href="style/reset.css" />
+		<link rel="stylesheet" href="style/style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script src="script/script.js"> </script>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	</head>
+	<body>
+		<!--Class container for formating the site with a fixed with for each screen size -->
+		<div class="container">
+			<header>
+
+				<!--Company header, surrounded by a logo on each site, logo is linked to easter egg javaScript function -->
+				<section id="company-header">
+					<img id="left-logo" src="img/logo.jpg" alt="LDD" title="Company Logo" ondblclick="easterEgg();">
+					<img id="right-logo" src="img/logo.jpg" alt="LDD" title="Company Logo" ondblclick="easterEgg();">
+					<h1>Logic Development and Design</h1>
+
+
+				</section>
+
+				<!-- Top navigation menu with links ot each page-->
+				<nav id="main-menu">
+					<ul>
+						<li class="currentPage"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href ="products.html">Products</a></li>
+						<li><a href="people.html">People</a></li>
+					</ul>
+				</nav>
+
+				<!-- Buttons that link to javaScript for normal read, easy read and toggle style functions --> 
+				<div id="buttons">
+
+					<button class="button" id="normal" onclick="normalRead()">Normal Read</button>
+					<button class="button" id="easy" onclick="easyRead()">Easy Read</button>
+					<button class="button" onclick="styleChange()">Toggle Change</button>
+
+				</div>
+
+				<!-- sub menu that links to areas on the current page and appears at the top on the left hand side of the page -->
+				<div id="left-side">
+					<nav id="sub-menu" >
+						<ul>
+							<li><h5>Key Offerings:</h5></li>
+							<li><a href="#sftDev">Software Development</a></li>
+							<li><a href="#consult">Consulting</a></li>
+							<li><a href="#train">Training</a></li>
+							<li><a href="#data">Data Management</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<!-- Content ID that seperate hte main body of the website -->
+			<div id="content" >
+
+				<div class="ptitle">
+					<h3 >Intro to our company</h3>
+				</div>
+
+				<!-- introduction for the page and its topics -->
+				<div id="pIntro">
+					<p>Logic Development and Design (LDD) is a premier software development company that provides fast, responsive services to our customers to suit their individual needs.</p>
+				</div>
+
+				<!-- Main content for the page with imgs and information -->
+				<div class="ptitle">
+					<h4>Key offerings</h4>
+				</div>
+				<div id="cat-list">
+					<ul>
+						<li>
+							<div class="category">
+								<h5 id="sftDev">Software development</h5>
+								<figure>
+									<img src="img/software-dev.jpg" alt="Software Development" title="Software Development">
+									<figcaption><p>Production and maintenance of robust, easily maintained and scalable user orientated software that is tailored to suit a businesses individual needs.</p></figcaption>
+								</figure>
+							</div>
+						</li>
+						<li>
+							<div class="category">
+								<h5 id="consult">Consulting</h5>
+								<figure>
+									<img src="img/Consulting-2.jpg" alt="Consulting" title="Consulting">
+									<figcaption><p>Consulting to optimize and integrate software into your work environment to create a seamless transition into new workspaces. With a business minded approach.</p></figcaption>
+								</figure>
+							</div>
+						</li>
+						<li>
+							<div class="category">
+								<h5 id="train">Training</h5>
+								<figure>
+									<img src="img/train.jpg" alt="Training programs" title="Training Programs">
+									<figcaption><p>Training provided to optimize employees time and ensure efficient production in Software Development environments in large or small team work spaces.</p></figcaption>
+								</figure>
+							</div>
+						</li>
+						<li>
+							<div class="category">
+								<h5 id="data">Data Management</h5>
+								<figure>
+									<img src="img/data.png" alt="Data MGMT" title="Data Managment">
+									<figcaption><p>Solutions provided to improve business performance and ensure your system can scale up as your company grows.</p></figcaption>
+								</figure>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- side bars on the right side with links to phone number and social media -->
+			<div id="right-side">
+				<aside id="quick-contacts" >
+					<h5>Have a quick question? </h5>
+					<h5>Give us a call! </h5>
+					&nbsp;
+					<h6>+1 403 234 4235</h6>
+				</aside>
+				<aside id="social">
+					<h5>Want to keep up to date?</h5>
+					&nbsp;
+					<ul id="social-media">
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Twitter</a></li>
+					</ul>
+				</aside>
+			</div>
+
+			<!-- nav at the bottom of the page with links to other pages -->
+			<nav id="bottom-menu">
+				<ul>
+					<li class="currentPage"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href ="products.html">Products</a></li>
+					<li><a href="people.html">People</a></li>
+				</ul>
+			</nav>
+
+			<!-- footer containing copyright information and author info -->
+			<footer id="footer">
+				<p> 
+					Website deisigned and implemented by Casey Ryane: 
+					Logic Development and Design &copy; 2018
+					All rights reserved
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

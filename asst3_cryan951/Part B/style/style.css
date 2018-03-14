@@ -1,0 +1,106 @@
+/* Background colors are specified for content background */
+
+#content{
+    background-color: whitesmoke;
+}
+
+/* Logo at top of page is made smaller to fit all screen sizes*/
+#left-logo{
+    width: 55px;
+}
+
+/* background is specifed and fonts are set for the body */
+body{
+    background-image: url(../img/background.png);
+    background-repeat: repeat;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+/* font for all headers is set*/
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oswald', sans-serif;
+}
+
+/*changes the color of all links that are unvistied*/
+a:link{
+    color: #000080; /*Dark Blue*/
+	text-decoration: none;
+}
+
+/* changes the color of links that have been visited */
+a:visited{
+    color: #800000; /*Maroon*/
+	text-decoration: none;
+}
+
+/*changes the color and underlines links outside of navs when you hover over them*/
+a:hover{
+    color: #df2d2d; /*dark red*/
+    text-decoration: underline;
+}
+
+/*Inner body list has styling removed */
+#cat-list ul li{
+    list-style: none;
+    display: inline-block
+}
+
+/* color and slight padding added to inner content items*/
+.category{
+    padding: 1em;
+    text-align: center;
+    background-color: #77B3F1;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    
+}
+
+/*Imgs inside the inner body are kept at respectable heights */
+.category img {
+    max-height: auto;
+    max-width: 50%;
+    padding: 0.5em;
+}
+
+
+/*Style for JavaScript */
+
+/*Hides the buttons when needed */
+.off{
+    display: none;
+}
+
+/*orignial disply for hidden button */
+#normal{
+    display: none;
+}
+
+
+/*style change for toggle style buttons, */
+
+/*adds grey background around inner content items */
+.shiftGrey{
+    background-color: grey;
+    
+}
+
+/*font is changed in paragraps and font is slightly increase, text aligns to the left isntead of center*/
+.shiftP{
+     font-family: "Times New Roman";
+    text-align: left;
+     background-color: grey;
+    padding: 0.5em;
+}
+
+/*Cahnges the background for the current pages*/
+.BGChange{
+    background-image: url(../img/bg2.jpg);
+    background-repeat: repeat;
+    
+}
+
+
+
+

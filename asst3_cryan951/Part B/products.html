@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Home | LDD</title>
+		<link rel="stylesheet" href="style/reset.css" />
+		<link rel="stylesheet" href="style/style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script src="script/script.js"> </script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- bootstrap CSS -->
+
+		<link rel = "stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+
+	</head>
+
+	<body>
+		<!--navbar that includes company name and logo added to the entire top of the page -->
+		<div class="row">
+			<div class="col-md-12">
+				<nav class = "navbar navbar-expand-sm bg-dark navbar-dark">
+
+					<!--Company header, with logo on left side. logo is linked to easter egg javaScript function -->
+					<img class="navbar-brand" id="left-logo" src="img/logo.jpg" alt="LDD" title="Company Logo" ondblclick="easterEgg();">
+					<h5 class="navbar-brand">Logic Development and Design</h5>
+
+					<!-- Top navigation menu with links ot each page -->
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link " href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href ="products.html">Products</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="people.html">People</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>         
+
+		<!--Class container for formating the site with a fixed with for each screen size -->
+		<div class="container">
+
+			<div class="col-s-12 text-center mt-2 mb-2">
+
+				<!-- Buttons that link to javaScript for normal read, easy read and toggle style functions --> 
+				<section>
+					<button class="btn" id="normal" onclick="normalRead()">Normal Read</button>
+					<button class="btn" id="easy" onclick="easyRead()">Easy Read</button>
+					<button class="btn" onclick="styleChange()">Toggle Change</button>
+				</section>
+			</div>
+
+			<div class="row">
+
+				<!-- Columns are set on right side for the sub nav -->
+				<nav class="col-sm-2 bg-light h-50">
+
+					<!-- stacked nav items that link to areas on current page -->
+					<ul class="nav flex-column">
+						<li><h5>Our Products:</h5></li>
+						<li class="nav-item">
+							<a class="nav-link" href="#web">Web Applications</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#mobile">Mobile Applications</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#dapp">Desktop Apllications</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#manage">Software Managment</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#cloud">Cloud Solutions</a>
+						</li>
+					</ul>
+				</nav>
+
+				<!--Main content is centered and takes up the majority fo the page -->
+				<div id="content" class="col-sm-8 ">
+
+					<div>
+						<h1 class="text-center">Available Products</h1>
+					</div>
+
+					<div>
+						<p>Logic Development and Design prides itself in being able to offer a wide variety of products and the knowledge that is neeeded to to fine tune and customize each product to ensure it is right for your business.</p>
+					</div>
+
+					<div>
+						<h2 class="text-center">Products</h2>
+					</div>
+					<div>
+						<ul>
+
+							<li>
+								<div class="category">
+									<h5 id="web">Web application development</h5>
+									<figure>
+										<img src="img/web.jpg" alt="Web App Development" title="Web Development">
+										<figcaption><p>Robust and intuitive online web-based applications to suit your needs. Regardless of business size.</p></figcaption>
+									</figure>
+								</div>
+							</li>
+
+							<li>
+								<div class="category">
+									<h5 id="mobile">Mobile application development</h5>
+									<figure>
+										<img src="img/app.jpg" alt="Mobile App Development" title="Mobile App Development">
+										<figcaption><p>iOS, android and windows Applications that are scalable and maintainable across platforms. </p></figcaption>
+									</figure>
+								</div>
+							</li>
+							<li>
+								<div class="category">
+									<h5 id="asses">Software Assessment and planning</h5>
+									<figure>
+										<img src="img/meeting.png" alt="Software Assessment" title="Software Assessment">
+										<figcaption><p>We offer expert advice on upgrading your software practices, planning and architecture.</p></figcaption>
+									</figure>
+								</div>
+							</li>
+							<li>
+								<div class="category">
+									<h5 id="dapp">Desktop Application Development </h5>
+									<figure>
+										<img src="img/desktop.png" alt="Desktop App Development" title="Desktop App Dev">
+										<figcaption><p>Desktop applications that are design to integrate seamlessly into your workspace and are tailored to your business needs.</p></figcaption>
+									</figure>
+								</div>
+							</li>
+							<li>
+								<div class="category">
+									<h5 id="manage">Software Management and Quality Control</h5>
+									<figure>
+										<img src="img/management-softwares.png" alt="Software Management" title="Software Management">
+										<figcaption><p>Ensuring reliable software is kept up to date as advancements are made in the industry.</p></figcaption>
+									</figure>
+								</div>
+							</li>
+							<li>
+								<div class="category">
+									<h5 id="cloud">Cloud Solutions</h5>
+									<figure>
+										<img src="img/software-selection.jpg" alt="Cloud Solutions" title="Cloud Solutions">
+										<figcaption><p>Ensuring scalable and expansive cloud computing and storage solutions for businesses of all sizes.</p></figcaption>
+									</figure>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--Quick contact and social media links are set on the right side  -->
+				<aside class="col-sm-2 h-50 bg-light">
+
+					<aside>
+						<h5>Have a quick question? </h5>
+						<h5>Give us a call! </h5>
+						&nbsp;
+						<h6>+1 403 234 4235</h6>
+						&nbsp;
+					</aside>
+
+					<aside class="mt-2">
+						<h5>Want to keep up to date?</h5>
+						&nbsp;
+						<ul>
+							<li><a href="#">Instagram</a></li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Twitter</a></li>
+						</ul>
+					</aside>
+
+				</aside>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12 mt-2">
+					<nav class = "navbar navbar-expand-sm bg-dark navbar-dark">
+
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Contact Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href ="products.html">Products</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="people.html">People</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<footer>
+				<p> 
+					Website deisigned and implemented by Casey Ryane: 
+					Logic Development and Design &copy; 2018
+					All rights reserved
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
+
+
+
